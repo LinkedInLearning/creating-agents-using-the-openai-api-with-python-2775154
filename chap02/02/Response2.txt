@@ -1,0 +1,27 @@
+response = client.responses.create(
+    model="gpt-4.1-mini",
+    tools=[{"type": "web_search_preview"
+        ,"search_context_size": "low"}],
+    #instructions="回答は日本語でお願いします",
+    input="何か楽しいのニュースはないかい?"
+)
+
+**1. 野球の快挙**
+
+- **プロ野球**: 横浜DeNAベイスターズが26年ぶりの日本一に輝きました。レギュラーシーズン3位からの逆転優勝は、2010年の 千葉ロッテマリーンズ以来2度目の快挙です。 ([www3.nhk.or.jp](https://www3.nhk.or.jp/news/word/0000001.html?utm_source=openai))
+
+- **高校野球**: 第106回全国高校野球選手権大会で、京都国際高校が初優勝を果たしました。 ([yomiurinews.org](https://yomiurinews.org/feature/top10news/20241125-OYT8T50161/?utm_source=openai))
+
+**2. ゴルフの新星**
+
+- **女子ゴルフ**: 21歳の竹田麗央プロが初の日本ツアー年間女王に輝きました。 ([kumanichi.com](https://kumanichi.com/big10news2024?utm_source=openai))
+
+**3. パラリンピックでの活躍**
+
+- **パリパラリンピック**: 日本は金メダル14個を含む総計41個のメダルを獲得し、前回東京大会の13個を上回る成果を上げました。 ([yomiurinews.org](https://yomiurinews.org/feature/top10news/20241125-OYT8T50161/?utm_source=openai))
+
+**4. エンターテインメントの躍進**
+
+- **エミー賞**: 日本を舞台にしたハリウッド時代劇「SHOGUN 将軍」が、米エミー賞で史上最多の18部門を受賞しました。 ([yomiurinews.org](https://yomiurinews.org/feature/top10news/20241125-OYT8T50161/?utm_source=openai))
+
+これらのニュースは、日本のスポーツやエンターテインメント分野での明るい話題として、多くの人々に喜ばれました。 
