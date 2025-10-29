@@ -3,3 +3,5 @@ openai
 streamlit
 python-dotenv
 openai-agents
+pydantic
+pydantic[email] 
