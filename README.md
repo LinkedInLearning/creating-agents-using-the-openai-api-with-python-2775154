@@ -1,36 +1,35 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# PythonでOpenAI APIを使ったエージェントを作成する
+LinkedInラーニングの「PythonでOpenAI APIを使ったエージェントを作成する」コース用のリポジトリです。このコースは[LinkedInラーニング][lil-course-url]で視聴できます。
 
-![course-name-alt-text][lil-thumbnail-url] 
+![lil-thumbnail-url]
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
-
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
-
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
-
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
-
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+OpenAIのAPIはChat Completion APIからResponse APIに進化し、Agents SDKもリリースされました。これらの新しい技術とPythonのプログラムでより簡単に複雑なAIエージェントを作成できます。このコースではOpenAIのResponse APIの使い方を始め、Agents SDKを使ったエージェントの作り方を説明します。Agents SDKを使えば、PythonのプログラムでドキュメントやWeb検索、自作の関数を呼び出すエージェントを作り、それらのエージェントを連携させることも可能です。このコースで学習すれば、複雑な仕組みを組み合わせなくても、OpenAIの提供する環境だけで自分専用の高度なエージェントを作成できるようになるでしょう。
 
 ## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+- エクササイズファイルを使うにはOpenAI API keyが必要です。次のサイト取得してください。[platform.openai.com](https://platform.openai.com)
+## GitHub Codespacesdで実行するには
+1. CodeボタンをクリックしてCodespacesを選んでください。
+3. 新規Codespaceを作成するか既存のCodespaceを選んでください。
+4. .envファイルをrootフォルダに作成してください。
+5. OPENAI_API_KEY=に続けて取得したOpenAI API keyを.envに記入してください。
+6. .envファイルをGitHub上ではなく、Codespaceだけに置くことでOpenAI API keyの誤使用、盗用を避けます。
+## Windowsで実行するには
+- PowerShellで次のコマンドを実行する。
+setx OPENAI_API_KEY "your_api_key_here"
+- もしくはエクササイズファイル内のコードファイルと同じフォルダに.envファイルを配置してください。
+- 詳細は次のページを参照してください。https://platform.openai.com/docs/quickstart
+
+## GitHub Codespacesについて
+プログラミング言語を学ぶ最良の方法は、実際にそれを使用することです。それがこのコースがGitHub Codespacesと統合されている理由です。GitHub Codespacesは、あなたが普段使っているIDEのすべての機能を提供するクラウド上の手軽な開発環境です。ローカルマシンのセットアップも必要ありません。 GitHub Codespacesを使えば、あなたが職場で使っている他のツールを使用しながら、どのパソコンからでもいつでもプログラミングの実践的な練習ができます。
+5ｍ
+## インストラクター
+
+金宏和實
+
+株式会社イーザー副社長、テクニカルライター
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
-
+[lil-course-url]: https://www.linkedin.com/learning/creating-agents-using-the-openai-api-with-python
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQFwyAFT9m_XEw/learning-public-crop_675_1200/B4EZs384BDIQAc-/0/1766170263978?e=2147483647&v=beta&t=Vv5BDNOAO_aFQ70IX79g8SpHjNnTkgkSRFLjlpoSgMM
