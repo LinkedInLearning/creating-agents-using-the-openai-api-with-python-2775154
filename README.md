@@ -7,7 +7,7 @@ OpenAIのAPIはChat Completion APIからResponse APIに進化し、Agents SDKも
 
 ## Installing
 - エクササイズファイルを使うにはOpenAI API keyが必要です。次のサイト取得してください。[platform.openai.com](https://platform.openai.com)
-## GitHub Codespacesdで実行するには
+## GitHub Codespacesで実行するには
 1. CodeボタンをクリックしてCodespacesを選んでください。
 3. 新規Codespaceを作成するか既存のCodespaceを選んでください。
 4. .envファイルをrootフォルダに作成してください。
